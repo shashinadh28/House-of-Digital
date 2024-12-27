@@ -1,0 +1,75 @@
+      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
+        {/* Logo and Description */}
+        <div className="flex flex-col items-center md:items-start text-center md:text-left">
+          <Image
+            src="/images/logo-name-2-liner.png"
+            alt="House of Digital Growth Logo"
+            width={150}
+            height={150}
+            className="w-[30vh] mb-4"
+          />
+          <p className="text-sm md:text-base font-light max-w-xs">
+            We help businesses grow with strategic digital solutions, providing
+            end-to-end services tailored to your needs.
+          </p>
+        </div>
+
+        {/* Navigation Links */}
+        <div className="flex flex-col items-center md:items-start">
+          <h3 className="text-xl mb-4 font-semibold">Quick Links</h3>
+          <nav className="flex flex-col gap-2 text-lg font-light">
+            <Link href="/">Home</Link>
+            <Link href="/#services">Services</Link>
+            <Link href="/about-us">About Us</Link>
+            <Link href="/contact-us">Contact Us</Link>
+          </nav>
+        </div>
+
+        {/* Office Location */}
+        <div className="flex flex-col items-center md:items-start">
+          <h3 className="text-xl mb-4 font-semibold">Our Office</h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.4356243961684!2d78.4090220478264!3d17.4388518588143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb913bc978e32d%3A0x17a29e2970ff3682!2s500034%2C%20Rd%20Number%2010C%2C%20MP%20and%20MLAs%20Colony%2C%20Gayatri%20Hills%2C%20Jubilee%20Hills%2C%20Hyderabad%2C%20Telangana%20500033!5e0!3m2!1sen!2sin!4v1731204243490!5m2!1sen!2sin"
+            width="600"
+            height="450"
+            loading="lazy"
+            className="w-56 h-40 rounded-lg mb-4"
+          ></iframe>
+          {/* <iframe
+            src="https://maps.google.com/maps?hl=en&amp;q=Gayathri%20Hills,%20Jubleehills%20-%20500034&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          ></iframe> */}
+          <address className="text-xs font-medium text-center md:text-left">
+            #1087, Rd no 10C, Gayathri Hills, <br />
+            Jubleehills - 500034 <br /> India
+          </address>
+        </div>
+
+        {/* Legal Links and Social Icons */}
+        <div className="text-center md:text-right mt-6 md:mt-0">
+          <div className="text-sm mb-2">
+            © 2024 House of Digital Growth. All rights reserved.
+          </div>
+          <div className="flex flex-row gap-6 justify-center md:justify-end mb-4">
+            <Link href="/terms" className="text-xs">
+              Terms & Conditions
+            </Link>
+            <Link href="/privacy" className="text-xs">
+              Privacy Policy
+            </Link>
+          </div>
+          <div className="flex flex-row gap-4 text-lg justify-center md:justify-end">
+            <Link href="https://www.facebook.com" aria-label="Facebook">
+              <FaFacebookF />
+            </Link>
+            <Link href="https://www.twitter.com" aria-label="Twitter">
+              <FaTwitter />
+            </Link>
+            <Link href="https://www.instagram.com" aria-label="Instagram">
+              <FaInstagram />
+            </Link>
+            <Link href="https://www.linkedin.com" aria-label="LinkedIn">
+              <FaLinkedinIn />
+            </Link>
+          </div>
+        </div>
+      </div>
